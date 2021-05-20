@@ -18,16 +18,18 @@
 // >* Un nombre de points d'attaque.
 
 import {Boss} from "./class.js"
-let boss1 = new Boss("Näz", 2000, 50);
-let boss2 = new Boss("Héritier", 2000, 50);
-let boss3 = new Boss("Nùmy", 2000, 40);
+let boss1 = new Boss("Näz la Menace ", 2000, 50);
+let boss2 = new Boss("Héritier l'Héritier", 2000, 50);
+let boss3 = new Boss("Nùmy La Légende", 2000, 40);
 console.log(boss1.nom);
+
 
 // #### A Savoir sur les boss :
 // >* une fois le boss à 20% de ses points de vie, il posera à tes personnages (l'utilisateur) une énigme (choisie aléatoirement entre minimum 3 énigmes) à laquelle ils devront répondre en 3 essais au maximum, s'ils échouent, ils mourront, sinon ils vaincront le boss.
+
+
 // import enigme from "./methode.js";
 // enigme();
-
 
 
 if (this.pv < 400){
@@ -50,8 +52,6 @@ if (this.pv < 400){
 // >* Que fait retourne Math.floor(1.3 * 10) ?
 
 
-
-
 // >* Le choix du type d'enigme est à votre guise cela peut même être un mix des styles
 // ​
 // ​
@@ -69,7 +69,8 @@ if (this.pv < 400){
 // - Actions :
 //   >* defense
 //   >* attaque
-// ​
+
+// 
 //   #### A Savoir sur le guerrier 
 //   >* Tous les tours le guerrier gagne 1 point de rage au bout de 4 points ,le guerrier gagne 25% ( * 1.25 ) d'attaque supplémentaire durant 1 tours puis retombe à 0 de rage et perd ce bonus.
 // ​
@@ -114,7 +115,10 @@ if (this.pv < 400){
 // >* Un boss est choisi aléatoirement parmis les trois, c'est vous qui aurez au préalable choisis ses caractéristiques
 // >* Vous attribuez des valeurs aux propriétés des boss.
 // >* L'utilisateur choisi le nom de chaque héros
+
 // >* Vous devez fixer un total de point de vies et de points d'attaques que l'utilisateur lui devra distribuer entre ses héros.(faites en sorte qu'il y ait beaucoup d'interaction)
+
+
 // >* L'utilisateur pourra choisir une posture 'attaque' ou 'défense' ou le mode 'normal' rien du tout avant le début du combat.
 // >* Chaque tour les trois personnages attaque une fois le boss.
 // >* Chaque tour le boss attaque au hasard un des personnages

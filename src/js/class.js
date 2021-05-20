@@ -7,3 +7,21 @@ class Boss{
 }
 
 export {Boss};
+
+
+class Heros{
+     constructor(nom, pv,pa,pr){
+          this.nom = nom; 
+          this.pv = pv;
+          this.pa = pa;
+          this.pr = pr;
+          this.defense = () =>{
+
+          }
+          this.attaque = () =>{
+               
+          }
+
+     }
+}
+
