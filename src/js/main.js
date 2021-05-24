@@ -18,11 +18,12 @@
 // >* Un nombre de points d'attaque.
 
 import {Boss} from "./class.js"
-let boss1 = new Boss("Näz la Menace ", 2000, 50);
-let boss2 = new Boss("Héritier l'Héritier", 2000, 50);
-let boss3 = new Boss("Nùmy La Légende", 2000, 40);
-console.log(boss1.nom);
+let sauron = new Boss("Sauron", 10, 100);
+let chronos = new Boss("Chronos", 300, 100);
+let lilith = new Boss("Lilith", 300, 100);
 
+console.log(sauron.attaquer());
+sauron.attaquer();
 
 // #### A Savoir sur les boss :
 // >* une fois le boss à 20% de ses points de vie, il posera à tes personnages (l'utilisateur) une énigme (choisie aléatoirement entre minimum 3 énigmes) à laquelle ils devront répondre en 3 essais au maximum, s'ils échouent, ils mourront, sinon ils vaincront le boss.
@@ -30,15 +31,6 @@ console.log(boss1.nom);
 
 // import enigme from "./methode.js";
 // enigme();
-
-
-if (this.pv < 400){
-     prompt("qu'est-ce qui est jaune et qui attend? ");
-
-}else{
-     alert("lksjflksdf");
-}
-
 
 
 
