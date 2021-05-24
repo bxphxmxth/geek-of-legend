@@ -18,6 +18,13 @@
 // >* Un nombre de points d'attaque.
 
 import {Boss} from "./class.js"
+import {Heros} from "./class.js"
+import {Mage} from "./class.js"
+import {Guerrier} from "./class.js"
+import {Archer} from "./class.js"
+
+
+
 let sauron = new Boss("Sauron", 10, 100);
 let chronos = new Boss("Chronos", 300, 100);
 let lilith = new Boss("Lilith", 300, 100);
@@ -25,9 +32,16 @@ let lilith = new Boss("Lilith", 300, 100);
 console.log(sauron.attaquer());
 sauron.attaquer();
 
+let mage = new Mage("Konärr", 100,20,50);
+console.log(mage);
+let guerrier = new Guerrier("TrØkrämé",100,20,30);
+console.log(guerrier);
+let archer = new Archer("Fo Le Prompt",100,20,["random"]);
+
+
+
 // #### A Savoir sur les boss :
 // >* une fois le boss à 20% de ses points de vie, il posera à tes personnages (l'utilisateur) une énigme (choisie aléatoirement entre minimum 3 énigmes) à laquelle ils devront répondre en 3 essais au maximum, s'ils échouent, ils mourront, sinon ils vaincront le boss.
-
 
 // import enigme from "./methode.js";
 // enigme();
@@ -47,6 +61,8 @@ sauron.attaquer();
 // >* Le choix du type d'enigme est à votre guise cela peut même être un mix des styles
 // ​
 // ​
+
+
 // ### - Trois héros : Un mage, Un guerrier, Un archer.
 // Avec les propriétés et actions suivantes :
 // ​
@@ -65,7 +81,8 @@ sauron.attaquer();
 // 
 //   #### A Savoir sur le guerrier 
 //   >* Tous les tours le guerrier gagne 1 point de rage au bout de 4 points ,le guerrier gagne 25% ( * 1.25 ) d'attaque supplémentaire durant 1 tours puis retombe à 0 de rage et perd ce bonus.
-// ​
+
+
 // ### Le mage 
 // - Propriétés :
 //   >* nom
